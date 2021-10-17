@@ -89,6 +89,17 @@ const definitions = [
     commandName: 'setToolActive',
     commandOptions: { toolName: 'ArrowAnnotate' },
   },
+  //added by K
+  {
+    id: 'Brush',
+    label: 'Brush',
+    icon: 'brush',
+    //
+    type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
+    commandName: 'setToolActive',
+    commandOptions: { toolName: 'Brush' },
+  },
+
   {
     id: 'Angle',
     label: 'Angle',

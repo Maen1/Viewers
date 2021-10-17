@@ -82,6 +82,7 @@ export default function init({ servicesManager, configuration }) {
       csTools.StackScrollTool,
       csTools.StackScrollMouseWheelTool,
       csTools.OverlayTool,
+      csTools.BrushTool,
     ],
   };
 
@@ -167,6 +168,8 @@ export default function init({ servicesManager, configuration }) {
   csTools.setToolActive('PanMultiTouch', { pointers: 2 }); // TODO: Better error if no options
   csTools.setToolActive('ZoomTouchPinch', {});
   csTools.setToolEnabled('Overlay', {});
+  csTools.setToolActive('Brush', { mouseButtonMask:1 });
+  csTools.setToolActive('FreehandRoi', { mouseButtonMask:1 });
 }
 
 const _initMeasurementService = measurementService => {

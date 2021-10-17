@@ -6,6 +6,7 @@ import { freehandMouse } from './freehandMouse';
 import { length } from './length';
 import { nonTarget } from './nonTarget';
 import { rectangleRoi } from './rectangleRoi';
+import { brush } from './brush';
 import { angle } from './angle';
 import { targetCR } from './targetCR';
 import { targetNE } from './targetNE';
@@ -20,6 +21,7 @@ export {
   length,
   nonTarget,
   rectangleRoi,
+  brush,
   angle,
   targetCR,
   targetNE,
