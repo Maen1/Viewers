@@ -11,6 +11,7 @@ const toolTypes = [
   'EllipticalRoi',
   'CircleRoi',
   'RectangleRoi',
+  'Brush',
 ];
 
 const ToolContextMenu = ({
@@ -70,9 +71,8 @@ const ToolContextMenu = ({
         item.params = { eventData, nearbyToolData };
 
         if (item.actionType === 'setDescription') {
-          item.label = `${
-            nearbyToolData.tool.description ? 'Edit' : 'Add'
-          } Description`;
+          item.label = `${nearbyToolData.tool.description ? 'Edit' : 'Add'
+            } Description`;
         }
 
         dropdownItems.push(item);
