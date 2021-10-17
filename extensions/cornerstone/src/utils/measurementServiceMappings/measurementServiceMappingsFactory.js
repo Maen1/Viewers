@@ -5,7 +5,7 @@ const SUPPORTED_TOOLS = [
   'EllipticalRoi',
   'RectangleRoi',
   'ArrowAnnotate',
-  'Brush'
+  'Brush',
 ];
 
 const measurementServiceMappingsFactory = measurementService => {
