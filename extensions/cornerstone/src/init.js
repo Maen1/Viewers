@@ -68,7 +68,7 @@ export default function init({ servicesManager, configuration }) {
       csTools.BidirectionalTool,
       csTools.LengthTool,
       csTools.AngleTool,
-      csTools.FreehandRoiTool,
+      csTools.FreehandScissorsTool,
       csTools.EllipticalRoiTool,
       csTools.DragProbeTool,
       csTools.RectangleRoiTool,
@@ -113,7 +113,7 @@ export default function init({ servicesManager, configuration }) {
     // An alternative approach would be to remove the `drawHandlesOnHover` config
     // from the supported configuration properties in `cornerstone-tools`
     const toolsWithHideableHandles = annotations.filter(
-      tool => !['RectangleRoiTool', 'EllipticalRoiTool', 'BrushTool'].includes(tool.name)
+      tool => !['RectangleRoiTool', 'EllipticalRoiTool', 'BrushTool', 'FreehandScissorsTool'].includes(tool.name)
     );
 
     let parsedProps = { ...props };
@@ -170,7 +170,7 @@ export default function init({ servicesManager, configuration }) {
   csTools.setToolActive('ZoomTouchPinch', {});
   csTools.setToolEnabled('Overlay', {});
   csTools.setToolActive('Brush', { mouseButtonMask: 1 });
-  csTools.setToolActive('FreehandRoi', { mouseButtonMask: 1 });
+  csTools.setToolActive('FreehandScissors', { mouseButtonMask: 1 });
 }
 
 const _initMeasurementService = measurementService => {

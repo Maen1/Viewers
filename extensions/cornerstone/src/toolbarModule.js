@@ -99,6 +99,15 @@ const definitions = [
     commandName: 'setToolActive',
     commandOptions: { toolName: 'Brush' },
   },
+  {
+    id: 'FreehandScissors',
+    label: 'FreehandScissors',
+    icon: 'star',
+    //
+    type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
+    commandName: 'setToolActive',
+    commandOptions: { toolName: 'FreehandScissors' },
+  },
 
   {
     id: 'Angle',

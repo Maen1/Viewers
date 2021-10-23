@@ -6,6 +6,7 @@ const SUPPORTED_TOOLS = [
   'RectangleRoi',
   'ArrowAnnotate',
   'Brush',
+  'FreehandScissors'
 ];
 
 const measurementServiceMappingsFactory = measurementService => {
@@ -110,6 +111,7 @@ const measurementServiceMappingsFactory = measurementService => {
       RectangleRoi: POLYLINE,
       ArrowAnnotate: POINT,
       Brush: POLYLINE,
+      FreehandScissors:POLYLINE,
     };
 
     return TOOL_TYPE_TO_VALUE_TYPE[toolType];
