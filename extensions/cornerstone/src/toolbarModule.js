@@ -91,17 +91,6 @@ const definitions = [
   },
   //added by K
   {
-    id: 'Brush',
-    label: 'Brush',
-    icon: 'brush',
-    //
-    type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
-    commandName: 'setToolActive',
-    commandOptions: { toolName: 'Brush' },
-  },
-
-
-  {
     id: 'SegDropdown',
     label: 'Segmentation',
     icon: 'ellipse-circle',
