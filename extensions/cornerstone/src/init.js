@@ -73,8 +73,8 @@ export default function init({ servicesManager, configuration }) {
       csTools.DragProbeTool,
       csTools.RectangleRoiTool,
       csTools.BrushTool,
-
     ],
+    
     other: [
       csTools.PanTool,
       csTools.ZoomTool,

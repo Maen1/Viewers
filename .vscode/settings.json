@@ -1,5 +1,8 @@
 {
-  "editor.rulers": [80, 120],
+  "editor.rulers": [
+    80,
+    120
+  ],
   // ===
   // Spacing
   // ===
@@ -26,10 +29,15 @@
       "autoFix": true
     }
   ],
-  "prettier.disableLanguages": ["html"],
+  "prettier.disableLanguages": [
+    "html"
+  ],
   "prettier.endOfLine": "lf",
   "workbench.colorCustomizations": {},
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
-  }
+  },
+  "cSpell.ignoreWords": [
+    "MULTIPOINT"
+  ]
 }

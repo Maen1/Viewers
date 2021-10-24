@@ -6,7 +6,7 @@ const SUPPORTED_TOOLS = [
   'RectangleRoi',
   'ArrowAnnotate',
   'Brush',
-  'FreehandScissors'
+  'FreehandScissors',
 ];
 
 const measurementServiceMappingsFactory = measurementService => {
@@ -102,7 +102,7 @@ const measurementServiceMappingsFactory = measurementService => {
   };
 
   const _getValueTypeFromToolType = toolType => {
-    const { POLYLINE, ELLIPSE, POINT } = measurementService.VALUE_TYPES;
+    const { MULTIPOINT, POLYLINE, ELLIPSE, POINT } = measurementService.VALUE_TYPES;
 
     /* TODO: Relocate static value types */
     const TOOL_TYPE_TO_VALUE_TYPE = {
@@ -110,8 +110,8 @@ const measurementServiceMappingsFactory = measurementService => {
       EllipticalRoi: ELLIPSE,
       RectangleRoi: POLYLINE,
       ArrowAnnotate: POINT,
-      Brush: POLYLINE,
-      FreehandScissors:POLYLINE,
+      Brush: MULTIPOINT,
+      FreehandScissors: MULTIPOINT,
     };
 
     return TOOL_TYPE_TO_VALUE_TYPE[toolType];

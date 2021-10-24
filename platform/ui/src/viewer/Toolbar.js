@@ -86,6 +86,12 @@ function getDefaultButtonData() {
       icon: 'square-o',
     },
     {
+      id: 'Brush',
+      title: 'Brush',
+      className: 'imageViewerTool',
+      icon: 'brush',
+    },
+    {
       id: 'resetViewport',
       title: 'Reset Viewport',
       className: 'imageViewerCommand',
