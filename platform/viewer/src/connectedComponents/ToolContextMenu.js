@@ -12,7 +12,8 @@ const toolTypes = [
   'CircleRoi',
   'RectangleRoi',
   'Brush',
-  'FreehandScissors'
+  'FreehandScissors',
+  'FreehandRoi',
 ];
 
 const ToolContextMenu = ({
