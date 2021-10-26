@@ -80,6 +80,12 @@ window.config = ({ servicesManager } = {}) => {
           }
         }
       },
+      FreehandRoi: {
+        configuration: {
+          getTextCallback: (callback, eventDetails) => UIDialogService.create({...
+        }
+      }
+    },
     },
     routerBasename: '/',
     servers: {

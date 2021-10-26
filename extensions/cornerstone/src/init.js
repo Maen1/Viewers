@@ -106,6 +106,14 @@ export default function init({ servicesManager, configuration }) {
           callInputDialog(data, eventDetails, callback),
       },
     },
+    FreehandRoi: {
+      configuration: {
+        getTextCallback: (callback, eventDetails) =>
+          callInputDialog(null, eventDetails, callback),
+        changeTextCallback: (data, eventDetails, callback) =>
+          callInputDialog(data, eventDetails, callback),
+      },
+    },
   };
 
   /* Abstract tools configuration using extension configuration. */

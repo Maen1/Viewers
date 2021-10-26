@@ -24,6 +24,11 @@ Tools can be configured through extension configuration using the tools key:
           getTextCallback: (callback, eventDetails) => callback(prompt('Enter your custom annotation')),
         },
       },
+      FreehandRoi: {
+        configuration: {
+          getTextCallback: (callback, eventDetails) => callback(prompt('Enter your custom annotation')),
+        },
+      },
     },
   },
   ...
