@@ -59,7 +59,7 @@ const SegmentationPanel = ({
    * store with context to make these kind of things less blurry.
    */
   const { configuration } = cornerstoneTools.getModule('segmentation');
-  const DEFAULT_BRUSH_RADIUS = configuration.radius || 10;
+  const DEFAULT_BRUSH_RADIUS = configuration.radius || 15;
 
   /*
    * TODO: We shouldn't hardcode brushColor color, in the future
