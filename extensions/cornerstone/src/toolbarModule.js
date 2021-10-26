@@ -71,15 +71,15 @@ const definitions = [
     commandName: 'setToolActive',
     commandOptions: { toolName: 'Pan' },
   },
-  {
-    id: 'Length',
-    label: 'Length',
-    icon: 'measure-temp',
-    //
-    type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
-    commandName: 'setToolActive',
-    commandOptions: { toolName: 'Length' },
-  },
+  // {
+  //   id: 'Length',
+  //   label: 'Length',
+  //   icon: 'measure-temp',
+  //   //
+  //   type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
+  //   commandName: 'setToolActive',
+  //   commandOptions: { toolName: 'Length' },
+  // },
   {
     id: 'ArrowAnnotate',
     label: 'Annotate',
@@ -90,6 +90,16 @@ const definitions = [
     commandOptions: { toolName: 'ArrowAnnotate' },
   },
   //added by K
+  {
+    id: 'FreehandRoi',
+    label: 'FreehandRoi',
+    icon: 'scissors',
+    //
+    type: TOOLBAR_BUTTON_TYPES.SET_TOOL_ACTIVE,
+    commandName: 'setToolActive',
+    commandOptions: { toolName: 'FreehandRoi' },
+  },
+
   {
     id: 'SegDropdown',
     label: 'Segmentation',

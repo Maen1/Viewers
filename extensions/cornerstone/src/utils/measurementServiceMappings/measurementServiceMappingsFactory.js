@@ -7,6 +7,7 @@ const SUPPORTED_TOOLS = [
   'ArrowAnnotate',
   'Brush',
   'FreehandScissors',
+  'FreehandRoi',
 ];
 
 const measurementServiceMappingsFactory = measurementService => {
@@ -112,6 +113,7 @@ const measurementServiceMappingsFactory = measurementService => {
       ArrowAnnotate: POINT,
       Brush: MULTIPOINT,
       FreehandScissors: MULTIPOINT,
+      FreehandRoi: MULTIPOINT,
     };
 
     return TOOL_TYPE_TO_VALUE_TYPE[toolType];
